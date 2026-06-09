@@ -1,6 +1,6 @@
-FROM almalinux:9
 ENV course="DevOps with AWS" \
-    trainer="deepika Peelam" \
+    trainer="sivakumar reddy" \
     duration="120HRS"
-RUN echo "hi {trainer}" > /tmp/sample.txt
-CMD ["sleep", "200"]    
+#here user1 is key, someuser is default value
+RUN echo "Hello ${USERNAME}" > /tmp/devops.txt
+CMD ["sleep", "100"]
